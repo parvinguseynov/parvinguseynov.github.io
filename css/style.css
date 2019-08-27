@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: khaki;
+}
+
+h2{
+    color: red;
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 24px;
+    font-weight: 800; /* жирность текста */
+    text-transform: uppercase; /* Все буквы в верхнем регистре */
+}
+
+img{
+    display: block;
+    margin: 0 auto; /* картинка по центру, этот параметр работает только с блочными элементами */
+    width: 280px;
+}
+
+.box{
+    display: inline-block;
+    vertical-align: top; /* это выравнивание - работает только со строчно-блочными
+    элементами (display: inline-blok) */
+    width: 360px;
+    margin: 22px;
+    padding: 10px;
+    background-color: green;
+}
+
+nav{/* static, relative, absolute, fixed, inherit */
+    /* position: static; Позиционирование, static - это значение по умолчанию,
+     т.е элемент отображается как ему положено */ 
+    position: relative; /* 
+     relative - это значение означает, что теперь мы можем двигать меню
+     как хотим. Например, можем задать значения left/right/top/bottom - от себя*/
+    /* position: absolute; - можем расположить абсолютно где пожелаем.
+    ОН РАБОТАЕТ ТОЛЬКО ДЛЯ РОДИТЕЛЬСКОГО БЛОКА СО ЗНАЧЕНИЕМ POSITION:RELATIVE
+    В отличии от realtive - значения left/right/top/bottom означают сдвиг к себе. */
+    /* position: fixed; /* меню фиксируется */ */
+    /* position: inherit - наследует значение позиционирования от родительского 
+    элемента */
+
+     left: 100px; /* Сдвиг слева на 100 пикселей - в релатив*/
+     top: 10px;
+}
+
+.example{
+    position: relative;
+    background-color: grey;
+}
